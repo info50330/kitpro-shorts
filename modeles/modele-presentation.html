@@ -1,0 +1,87 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--g:#1F3B34;--t:#C46A3C;--c:#F4EFE6}
+body{width:1920px;height:1080px;overflow:hidden;background:var(--c);font-family:Inter,sans-serif;color:#2b2b2b;position:relative}
+.bar{position:absolute;top:0;left:0;height:10px;background:var(--t);width:0;animation:bar 80s linear forwards;z-index:5}
+@keyframes bar{to{width:100%}}
+.top{position:absolute;top:40px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;z-index:5}
+.brand{font-weight:800;letter-spacing:6px;font-size:24px;color:var(--t)}
+.url{font-size:24px;font-weight:700;color:var(--g);background:#fff;border:3px solid var(--g);border-radius:40px;padding:8px 22px}
+.sc{position:absolute;inset:0;opacity:0;display:flex;align-items:center;padding:0 110px}
+@keyframes show{0%{opacity:0;transform:translateY(30px)}6%{opacity:1;transform:none}94%{opacity:1}100%{opacity:0}}
+@keyframes last{0%{opacity:0}8%{opacity:1}100%{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(40px) scale(.9)}to{opacity:1;transform:none}}
+@keyframes slow{from{transform:scale(1)}to{transform:scale(1.04)}}
+.s1{animation:show 6.2s ease-out 0s both}.s2{animation:show 8.2s ease-out 6s both}.s3{animation:show 12.2s ease-out 14s both}
+.s4{animation:show 12.2s ease-out 26s both}.s5{animation:show 10.2s ease-out 38s both}.s6{animation:show 10.2s ease-out 48s both}
+.s7{animation:show 10.2s ease-out 58s both}.s8{animation:last 12s ease-out 68s both}
+h1{font-family:'DM Serif Display',serif;font-weight:400;color:var(--g);font-size:120px;line-height:1.02}
+h1 em{font-style:normal;color:var(--t)}
+h2{font-family:'DM Serif Display',serif;font-weight:400;color:var(--g);font-size:76px;line-height:1.05}
+.lead{font-size:38px;font-weight:600;color:#444;margin-top:28px;line-height:1.35}
+.col{width:620px;flex:0 0 620px}
+.pages{flex:1;position:relative;height:820px}
+.pg{position:absolute;width:390px;border-radius:6px;box-shadow:0 20px 50px rgba(31,59,52,.25);background:#fff;opacity:0}
+.pg img{width:100%;display:block;border-radius:6px}
+ul{list-style:none;margin-top:30px}
+li{font-size:34px;font-weight:600;margin:16px 0;padding-left:46px;position:relative;opacity:0}
+li:before{content:"✓";position:absolute;left:0;color:var(--t);font-weight:800}
+.fan .pg:nth-child(1){left:40px;top:120px;transform:rotate(-8deg)}
+.fan .pg:nth-child(2){left:250px;top:70px;transform:rotate(-3deg)}
+.fan .pg:nth-child(3){left:460px;top:60px;transform:rotate(2deg)}
+.fan .pg:nth-child(4){left:670px;top:100px;transform:rotate(7deg)}
+.trio .pg:nth-child(1){left:0;top:80px}.trio .pg:nth-child(2){left:330px;top:40px}.trio .pg:nth-child(3){left:660px;top:80px}
+table{border-collapse:collapse;font-size:30px;margin-top:10px;background:#fff;box-shadow:0 20px 50px rgba(31,59,52,.15)}
+th{background:var(--g);color:#fff;padding:18px 26px;text-align:left;font-weight:700}
+td{padding:16px 26px;border-bottom:1px solid #E6DFD3;opacity:0}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;background:var(--t);color:#fff;font-weight:700;font-size:24px;padding:6px 16px;border-radius:6px;margin-bottom:22px}
+.end{background:var(--g);color:var(--c)}
+.end h1{color:var(--c)}
+.price{font-family:'DM Serif Display',serif;font-size:110px;color:#E9B48F;margin-top:20px}
+.big{display:inline-block;margin-top:36px;background:var(--c);color:var(--g);font-size:56px;font-weight:800;padding:22px 40px;border-radius:16px}
+.down{font-size:44px;font-weight:800;color:#E9B48F;margin-top:40px}
+.small{font-size:28px;color:#BFB8AA;margin-top:22px}
+</style></head><body data-duration="80" data-width="1920" data-height="1080">
+<div class="bar"></div>
+<div class="top"><div class="brand">KIT PRO · COIFFURE</div><div class="url">kitprofr.gumroad.com</div></div>
+
+<div class="sc s1"><div><h1>Kit Pro Coiffeur :<br>ce qu'il y a <em>dedans</em></h1><div class="lead">Le cahier de gestion du salon, page par page — en 80 secondes.</div></div></div>
+
+<div class="sc s2"><div class="col"><h2>21 pages<br>à imprimer</h2><div class="lead">+ un tableur qui fait<br>les calculs à votre place.</div></div>
+<div class="pages fan">
+<div class="pg" style="animation:pop .5s ease-out 6.6s both"><img src="img/p-01.png"></div>
+<div class="pg" style="animation:pop .5s ease-out 7.2s both"><img src="img/p-02.png"></div>
+<div class="pg" style="animation:pop .5s ease-out 7.8s both"><img src="img/p-05.png"></div>
+<div class="pg" style="animation:pop .5s ease-out 8.4s both"><img src="img/p-10.png"></div></div></div>
+
+<div class="sc s3"><div class="col"><span class="tag">1 · 2</span><h2>Votre activité<br>&amp; la réglementation</h2>
+<ul><li style="animation:pop .4s ease-out 15.5s both">Fiche d'identité du salon</li><li style="animation:pop .4s ease-out 17s both">Checklist réglementaire du coiffeur</li><li style="animation:pop .4s ease-out 18.5s both">Affichages obligatoires</li><li style="animation:pop .4s ease-out 20s both">Contacts &amp; fournisseurs</li></ul></div>
+<div class="pages trio"><div class="pg" style="animation:pop .5s ease-out 14.6s both"><img src="img/p-03.png"></div><div class="pg" style="animation:pop .5s ease-out 15.2s both"><img src="img/p-05.png"></div><div class="pg" style="animation:pop .5s ease-out 15.8s both"><img src="img/p-06.png"></div></div></div>
+
+<div class="sc s4"><div class="col"><span class="tag">3</span><h2>Prix, prix de revient<br>&amp; devis</h2>
+<ul><li style="animation:pop .4s ease-out 27.5s both">Carte des prestations</li><li style="animation:pop .4s ease-out 29s both">Calcul du coût de la minute</li><li style="animation:pop .4s ease-out 30.5s both">Prix de revient d'une prestation</li><li style="animation:pop .4s ease-out 32s both">Modèle de devis complet</li></ul></div>
+<div class="pages trio"><div class="pg" style="animation:pop .5s ease-out 26.6s both"><img src="img/p-07.png"></div><div class="pg" style="animation:pop .5s ease-out 27.2s both"><img src="img/p-08.png"></div><div class="pg" style="animation:pop .5s ease-out 27.8s both"><img src="img/p-09.png"></div></div></div>
+
+<div class="sc s5"><div class="col"><span class="tag">4 · 5</span><h2>Organisation<br>&amp; finances</h2>
+<ul><li style="animation:pop .4s ease-out 39.5s both">Planning hebdomadaire</li><li style="animation:pop .4s ease-out 41s both">Objectifs du mois</li><li style="animation:pop .4s ease-out 42.5s both">Recettes, dépenses, bilan</li></ul></div>
+<div class="pages trio"><div class="pg" style="animation:pop .5s ease-out 38.6s both"><img src="img/p-10.png"></div><div class="pg" style="animation:pop .5s ease-out 39.2s both"><img src="img/p-12.png"></div><div class="pg" style="animation:pop .5s ease-out 39.8s both"><img src="img/p-14.png"></div></div></div>
+
+<div class="sc s6"><div class="col"><span class="tag">6 · 7 · 8</span><h2>Clients, stocks<br>&amp; développement</h2>
+<ul><li style="animation:pop .4s ease-out 49.5s both">Fiches clients &amp; fiche couleur</li><li style="animation:pop .4s ease-out 51s both">Suivi des stocks</li><li style="animation:pop .4s ease-out 52.5s both">Plan d'action &amp; calendrier marketing</li></ul></div>
+<div class="pages trio"><div class="pg" style="animation:pop .5s ease-out 48.6s both"><img src="img/p-15.png"></div><div class="pg" style="animation:pop .5s ease-out 49.2s both"><img src="img/p-17.png"></div><div class="pg" style="animation:pop .5s ease-out 49.8s both"><img src="img/p-20.png"></div></div></div>
+
+<div class="sc s7"><div class="col"><span class="tag">BONUS</span><h2>Le tableur<br>de suivi financier</h2><div class="lead">Vous saisissez recettes et dépenses :<br>le reste se calcule tout seul.</div></div>
+<div style="flex:1;display:flex;justify-content:center"><div><div style="font-size:24px;color:#777;margin-bottom:8px">Exemple de tableau de bord (chiffres fictifs)</div>
+<table><tr><th>Mois</th><th>CA</th><th>Dépenses</th><th>Résultat</th><th>Panier moyen</th></tr>
+<tr><td style="animation:pop .3s ease-out 59.5s both">Janvier</td><td class="n" style="animation:pop .3s ease-out 59.8s both">4 120 €</td><td class="n" style="animation:pop .3s ease-out 60.1s both">2 650 €</td><td class="n" style="animation:pop .3s ease-out 60.4s both">1 470 €</td><td class="n" style="animation:pop .3s ease-out 60.7s both">41 €</td></tr>
+<tr><td style="animation:pop .3s ease-out 61.2s both">Février</td><td class="n" style="animation:pop .3s ease-out 61.5s both">3 860 €</td><td class="n" style="animation:pop .3s ease-out 61.8s both">2 540 €</td><td class="n" style="animation:pop .3s ease-out 62.1s both">1 320 €</td><td class="n" style="animation:pop .3s ease-out 62.4s both">39 €</td></tr>
+<tr><td style="animation:pop .3s ease-out 62.9s both">Mars</td><td class="n" style="animation:pop .3s ease-out 63.2s both">4 480 €</td><td class="n" style="animation:pop .3s ease-out 63.5s both">2 710 €</td><td class="n" style="animation:pop .3s ease-out 63.8s both">1 770 €</td><td class="n" style="animation:pop .3s ease-out 64.1s both">43 €</td></tr>
+</table></div></div></div>
+
+<div class="sc s8 end"><div><h1>Kit Pro Coiffeur</h1><div class="price">14,90 €</div>
+<div class="down">↓ Lien dans la description</div><div class="big">kitprofr.gumroad.com</div>
+<div class="small">Téléchargement immédiat · PDF + Excel / Google Sheets · Outil d'organisation, ne remplace pas un expert-comptable.</div></div></div>
+</body></html>

@@ -42,10 +42,27 @@ h2{font-family:'DM Serif Display',serif;font-weight:400;color:var(--g);font-size
 .book .t{font-family:'DM Serif Display',serif;font-size:96px;line-height:1}
 .book .s{font-size:36px;color:#777;margin-top:14px}
 .book .r{height:6px;background:#EDE6DA;margin-top:22px}
-.link{margin-top:110px;font-size:56px;font-weight:800;color:#E9B48F;opacity:0;animation:pop .4s ease-out 26.4s both}
+.link{margin-top:90px;font-size:56px;font-weight:800;color:#E9B48F;opacity:0;animation:pop .4s ease-out 26.4s both}
 .small{font-size:42px;color:#BFB8AA;margin-top:24px;font-weight:500;opacity:0;animation:pop .4s ease-out 27s both}
+
+.bg{position:absolute;inset:0;overflow:hidden;z-index:0}
+.bg i{position:absolute;border-radius:50%;opacity:.13;filter:blur(2px)}
+.bg i:nth-child(1){width:700px;height:700px;background:var(--t);left:-260px;top:1150px;animation:drift1 31s ease-in-out both}
+.bg i:nth-child(2){width:520px;height:520px;background:var(--g);right:-200px;top:180px;animation:drift2 31s ease-in-out both}
+.bg i:nth-child(3){width:300px;height:300px;background:var(--t);right:120px;top:1500px;opacity:.08;animation:drift1 31s ease-in-out reverse both}
+@keyframes drift1{0%{transform:translate(0,0) scale(1)}50%{transform:translate(120px,-90px) scale(1.12)}100%{transform:translate(40px,-200px) scale(1)}}
+@keyframes drift2{0%{transform:translate(0,0)}50%{transform:translate(-90px,140px)}100%{transform:translate(-30px,60px)}}
+.sc,.brand,.bar,.url{z-index:2}
+.url{position:absolute;top:62px;right:120px;font-size:30px;font-weight:700;color:var(--g);background:#fff;border:3px solid var(--g);border-radius:40px;padding:10px 26px}
+.card b{background:linear-gradient(transparent 62%,rgba(196,106,60,.28) 62%);animation:hl 1.6s ease-in-out infinite}
+@keyframes hl{0%,100%{background-size:100% 100%}50%{background-size:100% 120%}}
+.cta .url2{display:inline-block;margin-top:40px;background:var(--c);color:var(--g);font-size:58px;font-weight:800;padding:26px 44px;border-radius:18px;opacity:0;animation:pop .45s ease-out 26.9s both}
+.cta .arrow{display:inline-block;animation:bounce 1s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(16px)}}
 </style></head><body data-duration="31">
+<div class="bg"><i></i><i></i><i></i></div>
 <div class="bar"></div>
+<div class="url">kitprofr.gumroad.com</div>
 <div class="brand">KIT PRO · COIFFURE</div>
 
 <div class="sc s1"><h1>Coiffeurs :<br>votre vitrine<br>est-elle <em>en règle</em> ?</h1><div class="ul"></div>
@@ -66,6 +83,7 @@ h2{font-family:'DM Serif Display',serif;font-weight:400;color:var(--g);font-size
 
 <div class="sc s6"><div class="cta"><h1>Toute la<br>checklist ici</h1>
 <div class="book"><div class="t">Kit Pro<br>Coiffeur</div><div class="s">Cahier de gestion · 21 pages<br>+ tableur financier</div><div class="r"></div><div class="r"></div><div class="r"></div></div>
-<div class="link">→ Lien sur la chaîne</div>
-<div class="small">Réglementation, prix de revient, devis,<br>planning, fiches clients…</div></div></div>
+<div class="link"><span class="arrow">↓</span> Lien en 1<sup>er</sup> commentaire</div>
+<div class="url2">kitprofr.gumroad.com</div>
+<div class="small">Lien aussi sur la chaîne · réglementation, prix de revient, devis, planning, fiches clients…</div></div></div>
 </body></html>

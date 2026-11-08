@@ -4,6 +4,7 @@ Usage :
   python3 modele-short-render.py <fichier.html> <sortie.mp4> [preview]
 
 - La durée est lue dans l'attribut data-duration de <body> (en secondes), sinon 31 s.
+- Taille : data-width / data-height de <body> (défaut 1080x1920 ; 1920x1080 pour une vidéo longue).
 - "preview" écrit 6 images JPEG (preview_<t>.jpg) à côté de la sortie au lieu de la vidéo.
 Les animations CSS sont figées puis avancées image par image (document.getAnimations / currentTime).
 """
@@ -19,6 +20,10 @@ async def main(html, out, mode):
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={'width': 1080, 'height': 1920})
         await pg.goto(html.as_uri())
+        w = int(await pg.evaluate("parseInt(document.body.dataset.width || '1080')"))
+        h = int(await pg.evaluate("parseInt(document.body.dataset.height || '1920')"))
+        if (w, h) != (1080, 1920):
+            await pg.set_viewport_size({'width': w, 'height': h})
         await pg.wait_for_load_state('networkidle')
         await pg.evaluate("document.fonts.ready")
         await pg.wait_for_timeout(500)
