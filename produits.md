@@ -7,7 +7,7 @@ Un Short ne fait la promotion que d'un produit au statut `en vente`.
 ## Kit Pro Coiffeur
 - slug : dbpelo
 - lien : https://kitprofr.gumroad.com/l/dbpelo
-- statut : attente-fichiers (pas encore en vente)
+- statut : en vente (publié le 2026-11-08)
 - prix : 14,90 €
 - contenu : cahier PDF de 21 pages (fiche d'identité, checklist réglementaire, affichages obligatoires, carte des prestations, prix de revient, modèle de devis, planning, recettes / dépenses / bilan mensuel, fiches clients, fiche technique couleur, stocks, plan commercial, calendrier marketing, bilan annuel) + tableur de suivi financier (CA, résultat, panier moyen, écart à l'objectif, suivi du seuil micro).
 - cible : coiffeurs et coiffeuses indépendants, gérants de petits salons, futurs installés.
